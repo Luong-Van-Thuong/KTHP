@@ -1,0 +1,110 @@
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:shrinkColumns="*"
+    android:stretchColumns="*"
+    android:background="#ffffff">
+    <!--Row 1 with single column -->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        tools:gravity="center_vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="Giải phương trình bậc 2"
+            android:layout_span="3"
+            android:padding="18dip"
+            android:background="#b0b0b0"
+            android:textColor="@android:color/holo_red_light"
+            android:gravity="center"
+            tools:textColor="@android:color/holo_red_light"
+            android:textStyle="normal|bold" />
+    </TableRow>
+    <!--Row 2 with 3 columns -->
+    <TableRow
+        android:id="@+id/tableRow11"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp">
+        <TextView
+            android:id="@+id/TextView01"
+            android:text="Nhập hệ số a : "
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/TextView02"
+            android:text="Nhập hệ số b : "
+            android:layout_weight="0.5"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:padding="20dip"
+            android:gravity="center"/>
+
+    </TableRow><!--Row 2 with 3 columns -->
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="match_parent"
+        android:layout_width="0dp">
+        <EditText
+            android:id="@+id/hsa"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:padding="20dip"
+            android:gravity="center"/>
+        <EditText
+            android:id="@+id/hsb"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            android:padding="20dip"
+            android:gravity="center"/>
+
+    </TableRow>
+    <TableRow
+        android:orientation="vertical"
+        tools:gravity="center_vertical"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/Sol"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="Hiệu"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_weight="1" />
+    </TableRow><!--Row 5 with 1 columns -->
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:gravity="center_horizontal">
+        <TextView
+            android:id="@+id/x"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:padding="20dip"
+            android:gravity="center"
+            tools:background="@color/white" />
+    </TableRow>
+    <TableRow
+        android:orientation="vertical"
+        tools:gravity="center_vertical"
+        android:gravity="center_horizontal">
+        <Button
+            android:id="@+id/qvtc"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:text="RETURN"
+            android:background="@android:color/holo_red_dark"
+            android:textColor="@android:color/white"
+            android:layout_weight="1" />
+    </TableRow><!--Row 5 with 1 columns -->
+</TableLayout>
